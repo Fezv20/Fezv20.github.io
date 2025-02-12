@@ -61,6 +61,9 @@
   .bicicletas-lista ul {
     gap: 20px;
   }
+  #bicicleta .bicicletas-lista ul {
+    padding: 0px 0px 20px 0px;
+  }
   .bicicletas-lista li:hover::before {
     width: 0px;
     border-radius: 3px 3px 0px 0px;
