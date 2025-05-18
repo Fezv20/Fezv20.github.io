@@ -1,6 +1,7 @@
 .header-bg {
   background-color: var(--cor-12);
 }
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -10,11 +11,13 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .header-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
+
 .header-menu a {
   color: var(--cor-0);
   display: inline-block;
@@ -22,6 +25,7 @@
 
   position: relative;
 }
+
 .header-menu a:after {
   content: "";
   display: block;
@@ -32,28 +36,36 @@
   transition: 0.3s;
   position: absolute;
 }
-.header-menu a:hover:after {
+
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
   width: 100%;
 }
+
 @media (max-width: 800px) {
   .header-menu {
     gap: 20px;
   }
+
   .header-menu a {
     background: var(--cor-11);
     padding: 12px 16px;
     border-radius: 4px;
   }
+
   .header-menu a:hover {
     background-color: var(--cor-10);
   }
+
   .header a:after {
     display: none;
   }
 }
+
 .header-bg {
   background-color: #000000;
 }
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -66,11 +78,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .header-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
+
 .header-menu a {
   display: inline-block;
   padding: 16px 0px;
@@ -79,6 +93,7 @@
   font-family: "Poppins";
   font-weight: 400;
 }
+
 .header-menu a:after {
   content: "";
   display: block;
@@ -89,29 +104,36 @@
   transition: 0.3s;
   position: absolute;
 }
+
 .header-menu a:hover:after {
   width: 100%;
 }
+
 @media (max-width: 800px) {
   .header-menu {
     gap: 20px;
   }
+
   .header-menu a {
     background: #111111;
     padding: 12px 16px;
     border-radius: 4px;
   }
+
   .header-menu a:hover {
     background-color: #2e2e2e;
   }
+
   .header a:after {
     display: none;
   }
 }
+
 @media (max-width: 600px) {
   .header-menu {
     gap: 12px;
   }
+
   .header-menu a {
     padding: 8px 12px;
     font-size: 14px;
